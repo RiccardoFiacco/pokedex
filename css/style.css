@@ -1,8 +1,14 @@
 .bg-151-poke{
     background-image: url("../img/151-engels-1024x267.webp");  
-    width: 100%;   
+    background-size: contain;
+    height: 8vh;
+    /* background-size: cover;   */
 }
 
 .logo{
-    max-width: 200px;
+    max-width: 150px;
+}
+
+.pl-20{
+    padding-left: 20px;
 }
