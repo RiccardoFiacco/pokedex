@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Geologica:wght@100..900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.card{
+    font-family: "Open Sans", sans-serif;
+}
+
 .bg-151-poke{
     background-image: url("../img/151-engels-1024x267.webp");  
     background-size: contain;
@@ -11,4 +17,25 @@
 
 .pl-20{
     padding-left: 20px;
+}
+
+.aspect-ratio-1{
+    aspect-ratio: 1/1;
+}
+
+.p-15px{
+    padding: 15px;
+}
+
+.pl-10px{
+    padding-left: 10px;
+}
+.xxs-none{
+    display:none ;
+}
+
+@media (min-width: 382.99px){
+    .xxs-none{
+        display: flex;
+    }
 }
