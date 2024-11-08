@@ -53,7 +53,7 @@ function createCard(obj){
 
 
 //chiamo una funzione passandogli una callaback per creare le cards con la risposta della chiamata axios 
-let cardNum = 3;
+let cardNum = 151;
 let pkmn;
 let string ="";
 const staticUrl = "https://pokeapi.co/api/v2/pokemon/";
