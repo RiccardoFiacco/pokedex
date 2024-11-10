@@ -16,7 +16,6 @@
 .hvr-grow:hover {
     translate: 0 -5px;
     transition-duration: 0.1s;
-    cursor: pointer;
 }
 
 .logo{
