@@ -41,7 +41,7 @@ function putCards(app){
 function createCard(obj){
         cards.innerHTML += `
         <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card" id= ${obj.id}>
+            <div class="card hvr-grow" id= ${obj.id}>
                 <img src="${obj.sprites.front_default}" class="card-img-top aspect-ratio-1 p-15px" alt="...">                    
                 <p class="pl-10px fw-bolder">${obj.name}</p>
             </div>
