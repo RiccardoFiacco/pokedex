@@ -19,17 +19,38 @@
     </header>
 
     <div class="container">
+
         <div class="row mt-5 row-gap-4">
-          <div class="col-6">
-            <div class="pkmnImg"></div>
+          <div class="col">
+            <div class="fs-1" id="pkmnName"></div>
           </div>
+        </div>
+
+        <div class="row mt-5 row-gap-4">
+
           <div class="col-6">
-            <h1 class="pkmnImg"></h1>
-            <p class="pokeId">ID: </p>
-            <p class="type">Tipo: </p>
-            <p class="weigth">Peso: </p>
-            <p class="height">Altezza: </p>
-            <p class="cries">Verso:</p>
+            <img src="" id="pkmnImg"></img>
+          </div>
+
+          <div class="col-6 fs-4">
+            <p><strong>ID:</strong>
+              <span id="pokeId"> </span>
+            </p>
+            <p><strong>Tipo:</strong>
+              <span id="type"> </span>
+            </p>
+            <p><strong>Peso:</strong>
+              <span id="weigth"> </span>
+             </p>
+            <p><strong>Altezza:</strong>
+              <span id="height"> </span>
+            </p>
+
+            <p><strong>verso:</strong></p>
+            <figure>
+              <audio id="cry" controls src=""></audio>
+            </figure>
+
           </div>  
         </div>
     </div>
