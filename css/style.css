@@ -41,6 +41,10 @@
     display:none ;
 }
 
+#pkmnImg{
+    width: 100%;
+}
+
 @media (min-width: 382.99px){
     .xxs-none{
         display: flex;
