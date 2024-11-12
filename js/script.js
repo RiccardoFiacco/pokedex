@@ -32,12 +32,12 @@ function axiosPokeCall(api, callback){
 // function putCards(app){
 //     console.log(app)
 //     cards.innerHTML += app;
-// }
+// }#
 
 function createCard(obj){
         cards.innerHTML += `
         <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <a href="#">   
+            <a href="pokemon.html">   
                 <div class="card hvr-grow" id= ${obj.id}>
                     <img src="${obj.sprites.front_default}" class="card-img-top aspect-ratio-1 p-15px" alt="...">                    
                     <p class="pl-10px fw-bolder">${obj.name}</p>
@@ -47,26 +47,21 @@ function createCard(obj){
         addListener()
 } 
 
-// export function takePkmn(){
-    
-// }
-
 function addListener(){
     let els = document.querySelectorAll(".card"); //seleziono tutte le card con la la casse card
     els.forEach((el)=>{ //per ogni card
-        el.addEventListener("click", function() { //aggiungo una funzione che al click
-            let id = el.getAttribute("id") //mi prende il valore di id
-            takePkmn()
+        el.addEventListener("click", function(){ //aggiungo una funzione che al click
+            sendId = el.getAttribute("id") //mi prende il valore di id
+            console.log(sendId)
         })
     })
 }
 
-
-
-
 //chiamo una funzione passandogli una callaback per creare le cards con la risposta della chiamata axios 
 let cardNum = 151;
 let pkmn;
-let string ="";
+let sendId;
 const staticUrl = "https://pokeapi.co/api/v2/pokemon/";
 axiosCall(cardNum);
+
+export { sendId }

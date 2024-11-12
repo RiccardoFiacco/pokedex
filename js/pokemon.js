@@ -1,2 +1,5 @@
-// import { pkmnInfo } from "./script.js";
-// console.log(pkmnInfo)
+import { sendId }  from "./script.js";
+window.addEventListener("load", (event) => {
+    event.preventDefault()
+    console.log( sendId)
+})
