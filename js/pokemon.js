@@ -13,14 +13,18 @@ const id = urlParams.get('id');
 
 window.addEventListener("load", (event) => {
     event.preventDefault()
-
+    let pkmnImgFront;
+    let pkmnImgBack;
     axiosPokeCall('https://pokeapi.co/api/v2/pokemon/' + id, (pokemon) => {
         pkmnName.innerText += pokemon.name;
         pokeId.innerText += " "+pokemon.id;
         height.innerText += " "+pokemon.height;
         weigth.innerText += " "+pokemon.weight;
         pkmnImg.src = pokemon.sprites.front_default;
-
+        pkmnImgFront = pokemon.sprites.front_default;
+        pkmnImgBack = pokemon.sprites.back_default;
+        front
+        // pkmnImgBack.src = pokemon.sprites.back_default;
         let arr = pokemon.types
         arr.forEach(el => {
             type.innerText += " " + el.type.name
@@ -29,4 +33,10 @@ window.addEventListener("load", (event) => {
         cry.src = pokemon.cries.latest;
     })
     
+    front.addEventListener("click", ()=>{
+        pkmnImg.src = pkmnImgFront;
+    })
+    back.addEventListener("click", ()=>{
+        pkmnImg.src = pkmnImgBack;
+    })
 })
